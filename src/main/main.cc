@@ -21,7 +21,49 @@
 
 using namespace std;
 
-int main() {
-  cout << "Hello, World!" << endl;
-  return 0;
+namespace {
+void showUsage() {
+  cerr << "Usage:" << endl;
+  cerr << "  kewspace3 host <password>" << endl;
+  cerr << "  kewspace3 join <hostname> <password>" << endl;
+}
+}  // namespace
+
+/**
+ * Runs KEWSpace 3.
+ * Command lines accepted:
+ *  - kewspace3 host new <filename> <password>
+ *  - kewspace3 host saved <filename> <password>
+ *  - kewspace3 join <hostname> <password>
+ */
+int main(int argc, char *argv[]) {
+  switch (argc) {
+    case 3: {
+      if (argv[1] != "join"s) {
+        showUsage();
+        return 1;
+      }
+
+      cout << "Joining game..." << endl;
+    }
+    case 4: {
+      if (argv[1] != "host"s) {
+        showUsage();
+        return 1;
+      }
+
+      if (argv[2] == "new"s) {
+        cout << "Hosting new game..." << endl;
+      } else if (argv[2] == "saved"s) {
+        cout << "Hosting saved game..." << endl;
+      } else {
+        showUsage();
+        return 1;
+      }
+    }
+    default: {
+      showUsage();
+      return 1;
+    }
+  }
 }
