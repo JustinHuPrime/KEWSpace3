@@ -1,3 +1,3 @@
-# PROJECT_NAME
+# KEWSpace 3
 
-PROJECT_BRIEF
+A multiplayer space dogfighting game

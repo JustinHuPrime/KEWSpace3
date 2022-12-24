@@ -1,21 +1,21 @@
 # Copyright 2022 Justin Hu
 #
-# This file is part of PROJECT_NAME.
+# This file is part of KEWSpace 3.
 #
-# PROJECT_NAME is free software: you can redistribute it and/or modify it
-# under the terms of the GNU Affero General Public License as published by the
-# Free Software Foundation, either version 3 of the License, or (at your
-# option) any later version.
+# KEWSpace 3 is free software: you can redistribute it and/or modify it under
+# the terms of the GNU Affero General Public License as published by the Free
+# Software Foundation, either version 3 of the License, or (at your option) any
+# later version.
 #
-# PROJECT_NAME is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-# FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+# KEWSpace 3 is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+# A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
 # details.
 #
-# You should have received a copy of the GNU General Public License along with
-# PROJECT_NAME. If not, see <https://www.gnu.org/licenses/>.
+# You should have received a copy of the GNU Affero General Public License
+# along with KEWSpace 3. If not, see <https://www.gnu.org/licenses/>.
 #
-# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-3.0-or-later
 
 
 # command options
@@ -61,8 +61,8 @@ TDEPDIR := $(DEPDIRPREFIX)/$(TESTSUFFIX)
 TDEPS := $(patsubst $(TSRCDIR)/%.cc,$(TDEPDIR)/%.dep,$(TSRCS))
 
 # final executable name
-EXENAME := PROJECT_NAME
-TEXENAME := PROJECT_NAME-test
+EXENAME := kewspace3
+TEXENAME := kewspace3-test
 
 
 # compiler options
